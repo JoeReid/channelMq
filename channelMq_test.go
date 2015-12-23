@@ -1,7 +1,7 @@
 package channelMq_test
 
 import (
-	"github.com/JoeReid/channelMq"
+	"github.com/SuperLimitBreak/channelMq"
 	"time"
 )
 

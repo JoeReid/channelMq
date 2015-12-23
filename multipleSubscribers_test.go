@@ -2,7 +2,7 @@ package channelMq_test
 
 import (
 	"fmt"
-	"github.com/JoeReid/channelMq"
+	"github.com/SuperLimitBreak/channelMq"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
