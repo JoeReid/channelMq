@@ -29,6 +29,13 @@ func (m *MQ) Send(message []byte, keys []string) {
 		m.subscribersNoKey.send(message)
 	}
 
+	if len(keys) == 0 {
+		for _, v := range m.subscribers {
+			v.send(message)
+		}
+		return
+	}
+
 	keySet := asSet(keys)
 
 	for key, _ := range keySet {
